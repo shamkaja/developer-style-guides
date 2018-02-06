@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>FORD CSS styleguides</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="stylesheet" href="../css/demo.css">
+<style>
+body {
+	overflow: auto;
+}
+</style>
+</head>
+
+<body>
+	<div class="content">
+		<h4>Basic Button Styling</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button>Default Button</button>
+				<a href="#" class="btn">Link Button</a>
+				<button class="btn">Button</button>
+				<input type="button" class="btn" value="Input Button">
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-tile">
+					<li><a href="#html">HTML</a></li>
+					<li><a href="#css">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-tile" class="tab-wrap-content">
+					<div id="html" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-gradiant-stroke" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-gradiant-stroke">
+                    <script type="prism-html-markup">
+<button>Default Button</button>
+<a href="#" class="btn">Link Button</a>
+<button class="btn">Button</button>
+<input type="button" class="btn" value="Input Button">
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-stroke-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-stroke-style">
+                    <script type="prism-html-markup">
+button {
+	cursor:pointer;
+	outline:none;
+}
+
+.btn {
+    background-color: #8BC34A;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 10px;
+    cursor: pointer;
+    outline:none;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h4>Button Colors</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn btn-green">Green</button>
+				<button class="btn btn-red">Red</button>
+				<button class="btn btn-pink">Pink</button>
+				<button class="btn btn-blue">Blue</button>
+				<button class="btn btn-orange">Orange</button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-tile1">
+					<li><a href="#html1">HTML</a></li>
+					<li><a href="#css1">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-tile1" class="tab-wrap-content">
+					<div id="html1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-gradiant" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-gradiant">
+                    <script type="prism-html-markup">
+<button class="btn btn-green">Green</button>
+<button class="btn btn-red">Red</button>
+<button class="btn btn-pink">Pink</button>
+<button class="btn btn-blue">Blue</button>
+<button class="btn btn-orange">Orange</button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-icon-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-icon-style">
+                    <script type="prism-html-markup">
+.btn {
+    background-color: #8BC34A;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 10px;
+    cursor: pointer;
+    outline:none;
+}
+
+.btn-green {
+	background-color:#4CAF50;
+}
+
+.btn-red {
+	background-color:#F44336;
+}
+
+.btn-pink {
+	background-color:#E91E63;
+}
+
+.btn-blue {
+	background-color:#2196F3;
+}
+
+.btn-orange {
+	background-color:#FF9800;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			<h4>Button Sizes</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn font-size10">10px</button>
+				<button class="btn font-size12">12px</button>
+				<button class="btn font-size16">16px</button>
+				<button class="btn font-size20">20px</button>
+				<button class="btn font-size24">24px</button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-size">
+					<li><a href="#html2">HTML</a></li>
+					<li><a href="#css2">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-size" class="tab-wrap-content">
+					<div id="html2" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-size" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-size">
+                    <script type="prism-html-markup">
+<button class="btn font-size10">10px</button>
+<button class="btn font-size12">12px</button>
+<button class="btn font-size16">16px</button>
+<button class="btn font-size20">20px</button>
+<button class="btn font-size24">24px</button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css2" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-size-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-size-style">
+                    <script type="prism-html-markup">
+.btn {
+    background-color: #8BC34A;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 10px;
+    cursor: pointer;
+    outline:none;
+}
+
+.font-size10 {
+	font-size:10px;
+}
+
+.font-size12 {
+	font-size:12px;
+}
+
+.font-size16 {
+	font-size:16px;
+}
+
+.font-size20 {
+	font-size:20px;
+}
+
+.font-size24 {
+	font-size:24px;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			<h4>Colored Button Borders</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn border-green">Green</button>
+				<button class="btn border-red">Red</button>
+				<button class="btn border-pink">Pink</button>
+				<button class="btn border-blue">Blue</button>
+				<button class="btn border-orange">Orange</button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-border">
+					<li><a href="#html3">HTML</a></li>
+					<li><a href="#css3">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-border" class="tab-wrap-content">
+					<div id="html3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-border-color">
+                    <script type="prism-html-markup">
+<button class="btn border-green">Green</button>
+<button class="btn border-red">Red</button>
+<button class="btn border-pink">Pink</button>
+<button class="btn border-blue">Blue</button>
+<button class="btn border-orange">Orange</button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-border-color-style">
+                    <script type="prism-html-markup">
+.btn {
+    background:none;
+    border: none;
+    color:#333;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 10px;
+    cursor: pointer;
+    outline:none;
+}
+
+.border-green {
+	border:2px solid #4CAF50;
+}
+
+.border-red {
+	border:2px solid #F44336;
+}
+
+.border-pink {
+	border:2px solid #E91E63;
+}
+
+.border-blue {
+	border:2px solid #2196F3;
+}
+
+.border-orange {
+	border:2px solid #FF9800;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+		<h4>Bordered Button Group</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+			<div class="btn-group">
+				<button class="btn">Button</button>
+				<button class="btn">Button</button>
+				<button class="btn">Button</button>
+				<button class="btn">Button</button>
+				<button class="btn">Button</button>
+		    </div>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-group">
+					<li><a href="#html4">HTML</a></li>
+					<li><a href="#css4">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-group" class="tab-wrap-content">
+					<div id="html4" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-group" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-border-group">
+                    <script type="prism-html-markup">
+<div class="btn-group">
+  <button class="btn">Button</button>
+  <button class="btn">Button</button>
+  <button class="btn">Button</button>
+  <button class="btn">Button</button>
+  <button class="btn">Button</button>
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css4" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-group-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-border-group-style">
+                    <script type="prism-html-markup">
+.btn-group .btn{
+	background-color: #8BC34A;
+    border: 1px solid green;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+    outline:none;
+	float: left;
+}
+
+.btn-group .btn:not(:last-child) {
+    border-right: none;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<h4>Bordered Vertical Button Group</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+			<div class="vertical-btn-group">
+				<button class="btn">Button</button>
+				<button class="btn">Button</button>
+				<button class="btn">Button</button>
+				<button class="btn">Button</button>
+				<button class="btn">Button</button>
+		    </div>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-group1">
+					<li><a href="#html5">HTML</a></li>
+					<li><a href="#css5">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-group1" class="tab-wrap-content">
+					<div id="html5" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-group1" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-border-group1">
+                    <script type="prism-html-markup">
+<div class="vertical-btn-group">
+  <button class="btn">Button</button>
+  <button class="btn">Button</button>
+  <button class="btn">Button</button>
+  <button class="btn">Button</button>
+  <button class="btn">Button</button>
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css5" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-group-style1" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-border-group-style1">
+                    <script type="prism-html-markup">
+.vertical-btn-group .btn{
+	background-color: #8BC34A;
+    border: 1px solid green;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+    outline:none;
+	display:block;
+}
+
+.vertical-btn-group .btn:not(:last-child) {
+    border-bottom: none;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	</div>
+
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/prism.min.js"></script>
+	<script src="../js/clipboard.min.js"></script>
+
+	<script src="../js/code-box-copy.js"></script>
+	<script>
+		$('.code-box-copy').codeBoxCopy({
+			tooltipText : 'Copied',
+			tooltipShowTime : 1000,
+			tooltipFadeInTime : 300,
+			tooltipFadeOutTime : 300
+		});
+	</script>
+</body>
+</html>

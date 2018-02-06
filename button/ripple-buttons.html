@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>FORD CSS styleguides</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="stylesheet" href="../css/demo.css">
+<style>
+body {
+	overflow: auto;
+}
+</style>
+</head>
+
+<body>
+	<div class="content">
+	<h4>Ripple Button Colors</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn ripple btn-green">Click me</button>
+<button class="btn ripple btn-red">Click me</button>
+<button class="btn ripple btn-pink">Click me</button>
+<button class="btn ripple btn-blue">Click me</button>
+<button class="btn ripple btn-orange">Click me</button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-tile1">
+					<li><a href="#html1">HTML</a></li>
+					<li><a href="#css1">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-tile1" class="tab-wrap-content">
+					<div id="html1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-gradiant" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-gradiant">
+                    <script type="prism-html-markup">
+<button class="btn ripple btn-green">Click me</button>
+<button class="btn ripple btn-red">Click me</button>
+<button class="btn ripple btn-pink">Click me</button>
+<button class="btn ripple btn-blue">Click me</button>
+<button class="btn ripple btn-orange">Click me</button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-icon-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-icon-style">
+                    <script type="prism-html-markup">
+.btn {
+    background-color: #8BC34A;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 10px;
+    cursor: pointer;
+    outline:none;
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    border-radius: 3px;
+}
+
+.ripple:active:after {
+    transform: scale(0,0);
+    opacity: .2;
+    transition: 0s;
+}
+
+.ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle,#000 10%,transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10,10);
+    opacity: 0;
+    transition: transform .5s,opacity 1s;
+}
+
+.btn-green {
+	background-color:#4CAF50;
+}
+
+.btn-red {
+	background-color:#F44336;
+}
+
+.btn-pink {
+	background-color:#E91E63;
+}
+
+.btn-blue {
+	background-color:#2196F3;
+}
+
+.btn-orange {
+	background-color:#FF9800;
+}
+
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+			<h4>Colored Button Borders</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn ripple border-green">Click me</button>
+				<button class="btn ripple border-red">Click me</button>
+				<button class="btn ripple border-pink">Click me</button>
+				<button class="btn ripple border-blue">Click me</button>
+				<button class="btn ripple border-orange">Click me</button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-border">
+					<li><a href="#html3">HTML</a></li>
+					<li><a href="#css3">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-border" class="tab-wrap-content">
+					<div id="html3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-border-color">
+                    <script type="prism-html-markup">
+<button class="btn ripple border-green">Click me</button>
+<button class="btn ripple border-red">Click me</button>
+<button class="btn ripple border-pink">Click me</button>
+<button class="btn ripple border-blue">Click me</button>
+<button class="btn ripple border-orange">Click me</button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-border-color-style">
+                    <script type="prism-html-markup">
+.btn {
+    background:none;
+    border: none;
+    color:#333;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 10px;
+    cursor: pointer;
+    outline:none;
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    border-radius: 3px;
+}
+
+.ripple:active:after {
+    transform: scale(0,0);
+    opacity: .2;
+    transition: 0s;
+}
+
+.ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle,#000 10%,transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10,10);
+    opacity: 0;
+    transition: transform .5s,opacity 1s;
+}
+
+.border-green {
+	border:2px solid #4CAF50;
+}
+
+.border-red {
+	border:2px solid #F44336;
+}
+
+.border-pink {
+	border:2px solid #E91E63;
+}
+
+.border-blue {
+	border:2px solid #2196F3;
+}
+
+.border-orange {
+	border:2px solid #FF9800;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	</div>
+
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/prism.min.js"></script>
+	<script src="../js/clipboard.min.js"></script>
+
+	<script src="../js/code-box-copy.js"></script>
+	<script>
+		$('.code-box-copy').codeBoxCopy({
+			tooltipText : 'Copied',
+			tooltipShowTime : 1000,
+			tooltipFadeInTime : 300,
+			tooltipFadeOutTime : 300
+		});
+	</script>
+</body>
+</html>

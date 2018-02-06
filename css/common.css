@@ -1,0 +1,61 @@
+/* CSS Document */
+
+@font-face {
+  font-family: 'Antenna Reqular';
+  src: url('../font/antenna-for-ford-reg.eot'); /* IE9 Compat Modes */
+  src: url('../font/antenna-for-ford-reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/antenna-for-ford-reg.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/antenna-for-ford-reg.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/antenna-for-ford-reg.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/antenna-for-ford-regg.svg#Antenna Reqular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Antenna for MdCn';
+  src: url('../font/antenna-for-ford-md.eot'); /* IE9 Compat Modes */
+  src: url('../font/antenna-for-ford-md.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/antenna-for-ford-md.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/antenna-for-ford-md.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/antenna-for-ford-md.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/antenna-for-ford-md.svg#Antenna for MdCn') format('svg'); /* Legacy iOS */
+}
+/* @font-face {
+    font-family: 'Antenna for Ford';
+    src: url('../font/Antenna_for_Ford_Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antenna for Ford MdCn';
+    src: url('../font/Antenna_for_Ford_Md.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'AntennaForFordW1G-LtCd';
+    src: url('../font/AntennaForFordW1G-LtCd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antenna for Ford Condensed';
+    src: url('../font/Antenna_for_Ford_Cond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Antenna for MdCn', sans-serif;
+	font-size: 14px;
+	list-style-type: none;
+	text-decoration:none;
+}
+
+iframe{
+	border:none;
+}

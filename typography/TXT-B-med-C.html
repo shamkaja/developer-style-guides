@@ -1,0 +1,106 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORD CSS styleguides</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <style>
+      body{
+       overflow:auto;
+      }
+    </style>
+</head>
+
+<body>
+<div  class="content">
+                                                    <h4>TXT-B med-C</h4>
+                         <div class="reference-title">
+                           <h5>Ford Reference : </h5>
+                           <h6>TXT-B med-C</h6>
+                        </div>
+                        <div class="reference-title">
+                           <h5>Phoenix Reference : </h5>
+                           <h6>text-title</h6>
+                        </div>
+                        <div class="demo-tab">
+                            <div class="demo-content demo">
+                                <p class="demo-title">Demo</p>
+                                <div class="text-title">Headlines</div>
+                            </div>
+                            <div class="tab-wrap">
+
+                                <ul class="tabs-menu" data-tab-content-id="headlines">
+                                    <li><a href="#html">Markup</a></li>
+                                    <li><a href="#css">Styles</a></li>
+                                    <li class="slide"></li>
+                                </ul>
+                                <div class="tab-wrap-content" id="headlines">
+
+                                    <div id="html" class="tab-content">
+                                        <div class="demo-content">
+                                            <div class="code-box-copy">
+                                                <button class="code-box-copy__btn" data-clipboard-target="#text-title" title="Copy"></button>
+                                                <pre>
+												<code class="language-markup" id="text-title">
+                    <script type="prism-html-markup">
+<div class="text-title">Headlines</div>
+<p class="text-title">Headlines</p>
+<h3 class="text-title">Headlines</h3>
+                     </script>
+												</code>
+											</pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="css" class="tab-content">
+                                        <div class="demo-content">
+                                            <div class="code-box-copy">
+                                                <button class="code-box-copy__btn" data-clipboard-target="#text-title-style" title="Copy"></button>
+                                                <pre>
+												<code class="language-css" id="text-title-style">
+                    <script type="prism-html-markup">
+ .text-title {
+     color: #4B4E4F;
+     color: rgb(75, 78, 79);
+     font-family: 'Antenna for Ford MdCn';
+     font-size: 29px;
+     line-height: 35px;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+}
+                          </script>
+												</code>
+											</pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+                   
+     <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/tab.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <script src="../js/clipboard.min.js"></script>
+
+    <script src="../js/code-box-copy.js"></script>
+    <script>
+        $('.code-box-copy').codeBoxCopy({
+        			tooltipText : 'Copied',
+        			tooltipShowTime : 1000,
+        			tooltipFadeInTime : 300,
+        			tooltipFadeOutTime : 300
+        		});
+        
+      
+    </script>
+    </body>     
+    </html>

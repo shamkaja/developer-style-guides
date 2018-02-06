@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>FORD CSS styleguides</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="stylesheet" href="../css/demo.css">
+<style>
+body {
+	overflow: auto;
+}
+</style>
+</head>
+
+<body>
+	<div class="content">
+	<h4>Button Hover style 1</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+<button class="btn-hover-style1">Hover</button>
+<button class="btn-hover-style1 hover-green-border">Hover</button>
+<button class="btn-hover-style1 hover-pink-border">Hover</button>
+<button class="btn-hover-style1 hover-red-border">Hover</button>
+<button class="btn-hover-style1 hover-orange-border">Hover</button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-tile1">
+					<li><a href="#html1">HTML</a></li>
+					<li><a href="#css1">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-tile1" class="tab-wrap-content">
+					<div id="html1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-gradiant" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-gradiant">
+                    <script type="prism-html-markup">
+<button class="btn-hover-style1">Hover</button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-icon-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-icon-style">
+                    <script type="prism-html-markup">
+.btn-hover-style1{
+	 border:none;
+     background:none;
+     outline:none;
+     transition: all 150ms linear 0s;
+     position:relative;
+     padding:10px;
+     line-height: 40px;
+     font-size:16px;
+     cursor:pointer;
+     margin:10px;
+    width:100px;
+}
+
+.btn-hover-style1:hover, .btn-hover-style1:active {
+     letter-spacing: 5px;
+     transition: all 150ms linear 0s;
+}
+
+.btn-hover-style1:after,.btn-hover-style1:before {
+     border: 1px solid rgba(255, 255, 255, 0);
+     bottom: 0px;
+     content: " ";
+     display: block;
+     margin: 0 auto;
+     position: relative;
+     -webkit-transition: all 280ms ease-in-out;
+     transition: all 280ms ease-in-out;
+     width: 0;
+}
+
+.btn-hover-style1:hover:after,.btn-hover-style1:hover:before {
+     border-color: #56c5ff;
+     -webkit-transition: width 350ms ease-in-out;
+     transition: width 350ms ease-in-out;
+     width: 100%;
+}
+.btn-hover-style1:hover:before {
+     bottom: auto;
+     top: 0;
+}
+
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+			<h4>Button Hover style 2</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn-hover-style2"><span>Hover</span></button>
+				<button class="btn-hover-style2 style2-green-bg"><span>Hover</span></button>
+				<button class="btn-hover-style2 style2-pink-bg"><span>Hover</span></button>
+				<button class="btn-hover-style2 style2-red-bg"><span>Hover</span></button>
+				<button class="btn-hover-style2 style2-orange-bg"><span>Hover</span></button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-border">
+					<li><a href="#html3">HTML</a></li>
+					<li><a href="#css3">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-border" class="tab-wrap-content">
+					<div id="html3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-border-color">
+                    <script type="prism-html-markup">
+<button class="btn-hover-style2"><span>Hover</span></button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-border-color-style">
+                    <script type="prism-html-markup">
+  .btn-hover-style2{
+     position: relative;
+     overflow: hidden;
+     border:2px solid #2196F3;
+     color:#333;
+     font-weight:bold;
+     font-size:16px;
+     font-family:monospace;
+     cursor:pointer;
+     margin:20px 10px;
+     outline:none;
+     border-radius:3px;
+     background:none;
+     width: 140px;
+     padding:0;
+     -webkit-transition: 0.5s ease-in-out;
+     transition: 0.5s ease-in-out;
+     align-item:center;
+     justify-content:center;
+}
+
+ .btn-hover-style2 span{
+     display: block;
+     font-family: monospace;
+     padding: 7px;
+     position:relative;
+     z-index:9;
+}
+
+ .btn-hover-style2:hover{
+     color:#fff;
+}
+
+ .btn-hover-style2:before,.btn-hover-style2:after,.btn-hover-style2 span:before,.btn-hover-style2 span:after{
+     content: '';
+     position: absolute;
+     top: 0;
+     width: 25.25%;
+     height: 0;
+     background-color: #2196F3;
+     transition: 0.5s ease-in-out;
+     z-index: -1;
+}
+
+ .btn-hover-style2:before {
+     left: 0;
+}
+
+ .btn-hover-style2:after {
+     left: 50%;
+}
+
+ .btn-hover-style2:hover:before,.btn-hover-style2:hover:after,.btn-hover-style2:hover span:before,.btn-hover-style2:hover span:after {
+     height:100%;
+}
+
+ .btn-hover-style2 span:before, .btn-hover-style2 span:after {
+     top: auto;
+     bottom: 0;
+}
+
+ .btn-hover-style2 span:before {
+     left: 25%;
+}
+
+ .btn-hover-style2 span:after {
+     left: 75%;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+			<h4>Button Hover style 3</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn-hover-style3"><span>Hover</span></button>
+				<button class="btn-hover-style3 style3-green-bg"><span>Hover</span></button>
+				<button class="btn-hover-style3 style3-pink-bg"><span>Hover</span></button>
+				<button class="btn-hover-style3 style3-red-bg"><span>Hover</span></button>
+				<button class="btn-hover-style3 style3-orange-bg"><span>Hover</span></button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-hover">
+					<li><a href="#html4">HTML</a></li>
+					<li><a href="#css4">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-hover" class="tab-wrap-content">
+					<div id="html4" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-hover-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-hover-color">
+                    <script type="prism-html-markup">
+<button class="btn-hover-style3"><span>Hover</span></button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css4" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-hover-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-hover-color-style">
+                    <script type="prism-html-markup">
+  .btn-hover-style3{
+     position: relative;
+     overflow: hidden;
+     border:2px solid #2196F3;
+     color:#333;
+     font-weight:bold;
+     font-size:16px;
+     font-family:monospace;
+     cursor:pointer;
+     margin:20px 10px;
+     outline:none;
+     border-radius:3px;
+     background:none;
+     width: 140px;
+     padding:0;
+     -webkit-transition: 0.5s ease-in-out;
+     transition: 0.5s ease-in-out;
+     align-item:center;
+     justify-content:center;
+}
+
+ .btn-hover-style3 span{
+     display: block;
+     font-family: monospace;
+     padding: 7px;
+     position:relative;
+     z-index:9;
+}
+
+ .btn-hover-style3:hover{
+     color:#fff;
+}
+.btn-hover-style3:before, .btn-hover-style3:after {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     border-top: 20px solid #2196F3;
+     border-bottom: 20px solid #2196F3;
+     z-index:-1;
+     transition: 0.5s ease-in-out;
+}
+.btn-hover-style3:before {
+     border-right: 40px solid transparent;
+     -webkit-transform: translateX(-100%);
+     transform: translateX(-100%);
+}
+.btn-hover-style3:after {
+     border-left: 40px solid transparent;
+     -webkit-transform: translateX(100%);
+     transform: translateX(100%);
+}
+.btn-hover-style3:hover:before {
+     -webkit-transform: translateX(-20%);
+     transform: translateX(-20%);
+}
+.btn-hover-style3:hover:after {
+     -webkit-transform: translateX(20%);
+     transform: translateX(20%);
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	
+		<h4>Button Hover style 4</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn-hover-style4">Hover</button>
+				<button class="btn-hover-style4 style4-green-bg">Hover</button>
+				<button class="btn-hover-style4 style4-pink-bg">Hover</button>
+				<button class="btn-hover-style4 style4-red-bg">Hover</button>
+				<button class="btn-hover-style4 style4-orange-bg">Hover</button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-hover1">
+					<li><a href="#html5">HTML</a></li>
+					<li><a href="#css5">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-hover1" class="tab-wrap-content">
+					<div id="html5" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-hover1-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-hover1-color">
+                    <script type="prism-html-markup">
+<button class="btn-hover-style4">Hover</button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css5" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-hover1-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-hover1-color-style">
+                    <script type="prism-html-markup">
+  .btn-hover-style4{
+     position: relative;
+     overflow: hidden;
+     border:2px solid #2196F3;
+     color:#333;
+     font-weight:bold;
+     font-size:16px;
+     font-family:monospace;
+     cursor:pointer;
+     margin:20px 10px;
+     outline:none;
+     border-radius:3px;
+     background:none;
+     width: 140px;
+     padding:10px;
+     -webkit-transition: 0.5s ease-in-out;
+     transition: 0.5s ease-in-out;
+     align-item:center;
+     justify-content:center;
+}
+
+.btn-hover-style4:hover{
+     color:#fff;
+}
+
+.btn-hover-style4:after {
+     content: '';
+     position: absolute;
+     -webkit-transition: all 0.4s cubic-bezier(0, 0, 0, 0.3);
+     transition: all 0.4s cubic-bezier(0, 0, 0, 0.3);
+     width: 0;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: -1;
+}
+
+.btn-hover-style4:hover:after {
+     width: 100%;
+     background: #333;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<h4>Button Hover style 5</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<button class="btn-hover-style5" data-text="Hover"><span>H</span><span>o</span><span>v</span><span>e</span><span>r</span></button>
+				<button class="btn-hover-style5 style5-green-bg" data-text="Hover"><span>H</span><span>o</span><span>v</span><span>e</span><span>r</span></button>
+				<button class="btn-hover-style5 style5-pink-bg" data-text="Hover"><span>H</span><span>o</span><span>v</span><span>e</span><span>r</span></button>
+				<button class="btn-hover-style5 style5-red-bg" data-text="Hover"><span>H</span><span>o</span><span>v</span><span>e</span><span>r</span></button>
+				<button class="btn-hover-style5 style5-orange-bg" data-text="Hover"><span>H</span><span>o</span><span>v</span><span>e</span><span>r</span></button>
+			</div>
+			<div class="tab-wrap">
+
+				<ul class="tabs-menu" data-tab-content-id="btn-hover2">
+					<li><a href="#html6">HTML</a></li>
+					<li><a href="#css6">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-hover2" class="tab-wrap-content">
+					<div id="html6" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-hover2-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-hover2-color">
+                    <script type="prism-html-markup">
+<button class="btn-hover-style5" data-text="Hover"><span>H</span><span>o</span><span>v</span><span>e</span><span>r</span></button>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css6" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-hover2-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-hover2-color-style">
+                    <script type="prism-html-markup">
+.btn-hover-style5{
+     position: relative;
+     overflow: hidden;
+     border:2px solid #2196F3;
+     color:#fff;
+     font-weight:normal;
+     font-size:16px;
+     font-family:monospace;
+     cursor:pointer;
+     margin:20px 10px;
+     outline:none;
+     border-radius:3px;
+     background:#2196F3;
+     width:150px;
+     height:36px;
+     padding:0;
+     -webkit-transition: 0.2s ease-in-out;
+     transition: 0.2s ease-in-out;
+     align-item:center;
+     justify-content:center;
+}
+
+.btn-hover-style5::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+-webkit-transition: 0.5s ease-in-out;
+     transition: 0.5s ease-in-out;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-hover-style5 > span {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.btn-hover-style5:hover{
+  background: none;
+  color:#2196F3;
+}
+
+.btn-hover-style5:hover::before {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.btn-hover-style5:hover > span {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.btn-hover-style5:hover > span:nth-child(1) {
+    -webkit-transition-delay: 0.045s;
+    transition-delay: 0.09s;
+}
+
+.btn-hover-style5:hover > span:nth-child(2) {
+    -webkit-transition-delay: 0.135s;
+    transition-delay: 0.135s;
+}
+
+.btn-hover-style5:hover > span:nth-child(3) {
+    -webkit-transition-delay: 0.18s;
+    transition-delay: 0.18s;
+}
+
+.btn-hover-style5:hover > span:nth-child(4) {
+    -webkit-transition-delay: 0.225s;
+    transition-delay: 0.225s;
+}
+
+.btn-hover-style5:hover > span:nth-child(5) {
+    -webkit-transition-delay: 0.27s;
+    transition-delay: 0.27s;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	</div>
+
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/prism.min.js"></script>
+	<script src="../js/clipboard.min.js"></script>
+
+	<script src="../js/code-box-copy.js"></script>
+	<script>
+		$('.code-box-copy').codeBoxCopy({
+			tooltipText : 'Copied',
+			tooltipShowTime : 1000,
+			tooltipFadeInTime : 300,
+			tooltipFadeOutTime : 300
+		});
+	</script>
+</body>
+</html>
