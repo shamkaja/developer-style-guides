@@ -17,7 +17,7 @@
 }
 
  body {
-     background: rgb(223, 224, 224);
+     background: #484847;
 }
 
  .container {
@@ -28,8 +28,8 @@
 }
 
  .left-panel {
-     background: #fff;
-     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+     background: #313130;
+     /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2); */
      height: calc(100% - 50px);
      left: 0;
      position: fixed;
@@ -42,12 +42,12 @@
 }
 
  .left-panel ul li {
-     border-bottom: 1px solid #eee;
+     /* border-bottom: 1px solid #eee; */
      cursor: pointer;
 }
 
  .left-panel ul li a {
-     color: #333;
+     color: #fff;
      display: block;
      font-size: 12px;
      font-weight: 700;
@@ -56,7 +56,7 @@
 }
 
  .left-panel ul li.current a {
-     background: #e6e5e5;
+     background: #484847;
 }
 
  .right-panel {
@@ -85,34 +85,36 @@
 
  .top-panel {
         align-items: center;
-    background: #008cba;
-    color: #fff;
-    display: flex;
-    font-weight: normal;
-    height: 50px;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    font-family: 'Cookie', cursive;
-    font-size: 33px;
+        background: #1CC87E;
+        color: #fff;
+        display: flex;
+        font-weight: normal;
+        height: 50px;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        font-family: 'Cookie', cursive;
+        font-size: 33px;
 }
 
  .demo-tab {
-     margin-top: 20px;
+     margin: 20px 0 80px 0;
 }
 
  h4 {
-     border-bottom: 1px solid #ccc;
-     color: #2a77aa;
+     border-bottom: 2px solid #1cc87e;
+     color: #fff;
      font-size: 21px;
      font-weight: 500;
      margin: 20px 0;
      padding: 10px 0;
+     position:relative;
 }
 
+
  p {
-     color: #757575;
+     color: #fff;
      font-size: 13px;
      font-weight: 400;
      line-height: 24px;
@@ -149,14 +151,14 @@
 
  .tab-wrap ul {
      display: flex;
-     margin-top: 30px;
+     margin-top: 40px;
      position: relative;
      width: 100%;
 }
 
  .tab-wrap ul li {
      align-items: center;
-     background-color: #d6d4d4;
+     background-color: #313130;
      box-sizing: border-box;
      color: #666;
      cursor: pointer;
@@ -173,13 +175,13 @@
      -webkit-box-pack: center;
      -webkit-box-sizing: border-box;
      -webkit-transition: color 0.2s ease;
-    flex:1;
+     flex:1;
      z-index: 1;
 }
 
  .tab-wrap ul li a {
      align-items: center;
-     color: #666;
+     color: #ccc;
      display: flex;
      height: 100%;
      justify-content: center;
@@ -200,7 +202,7 @@
 }
 
  .tab-wrap ul li.slide {
-     background: #1b394e;
+     background: #1cc87e;
      height: 4px;
      left: 0;
      position: absolute;
@@ -244,7 +246,7 @@
 }
 
  .left-panel ul li.current .sub-menu li.current a {
-     color: #008cba;
+     color: #1cc87e;
 }
 
  .demo {
@@ -255,9 +257,9 @@
 }
 
  .demo p.demo-title {
-     color: #905;
+     color: #1CC87E;
      left: -40px;
-     margin: 0 0 20px 0;
+     margin: 20px 0 40px 0;
      text-decoration: underline;
      position: relative;
 }
@@ -278,8 +280,8 @@
 }
 
 .version span{
-	color: #07a;
-    margin-left: 20px;
+	color: #1cc87e;
+	margin-left: 20px;
 }
 
 svg path,svg circle{
@@ -287,8 +289,8 @@ svg path,svg circle{
 }
 
 p.demo-source{
-    color: #905;
-    margin: 10px 0 0 0;
+    color: #1CC87E;
+    margin: 40px 0 0 0;
     text-decoration: underline;
     position: relative;
     top: 5px;
