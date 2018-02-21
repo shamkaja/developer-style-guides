@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CSS styleguides</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="stylesheet" href="../css/demo.css">
+<style>
+body {
+	overflow: auto;
+}
+p{
+  color:#333;
+}
+
+p span{
+  color:#e83e8c;
+  margin:0 5px;
+}
+
+
+</style>
+</head>
+
+<body>
+	<div class="content typography">
+	<h4>Typography</h4>
+	<p>Use tags <span> h1 to h6 </span> for get desire heading.</p>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<h1>h1.heading</h1>
+                <h2>h2.heading</h2>
+                <h3>h3.heading</h3>
+                <h4>h4.heading</h4>
+                <h5>h5.heading</h5>
+                <h6>h6.heading</h6>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="btn-tile1">
+					<li><a href="#html1">HTML</a></li>
+					<li><a href="#css1">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-tile1" class="tab-wrap-content">
+					<div id="html1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-gradiant" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-gradiant">
+                    <script type="prism-html-markup">
+<h1>h1.heading</h1>
+<h2>h2.heading</h2>
+<h3>h3.heading</h3>
+<h4>h4.heading</h4>
+<h5>h5.heading</h5>
+<h6>h6.heading</h6>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-icon-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-icon-style">
+                    <script type="prism-html-markup">
+ h1,h2,h3,h4,h5,h6 {
+    color: #455a64;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+h1 {
+    line-height: 40px;
+    font-size: 36px;
+}
+
+h2 {
+    line-height: 36px;
+    font-size: 24px;
+}
+
+h3 {
+    line-height: 30px;
+    font-size: 21px;
+}
+
+h4 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+h5 {
+   line-height: 18px;
+    font-size: 16px;
+}
+
+h6 {
+    line-height: 16px;
+    font-size: 14px;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+			<h4>Heading with subtitle</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<h1>Heading 1 <small>Sub-heading</small></h1>
+                <h2>Heading 2 <small>Sub-heading</small></h2>
+                <h3>Heading 3 <small>Sub-heading</small></h3>
+                <h4>Heading 4 <small>Sub-heading</small></h4>
+                <h5>Heading 5 <small>Sub-heading</small></h5>
+                <h6>Heading 6 <small>Sub-heading</small></h6>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="btn-border">
+					<li><a href="#html3">HTML</a></li>
+					<li><a href="#css3">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-border" class="tab-wrap-content">
+					<div id="html3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-border-color">
+                    <script type="prism-html-markup">
+<h1>Heading 1 <small>Sub-heading</small></h1>
+<h2>Heading 2 <small>Sub-heading</small></h2>
+<h3>Heading 3 <small>Sub-heading</small></h3>
+<h4>Heading 4 <small>Sub-heading</small></h4>
+<h5>Heading 5 <small>Sub-heading</small></h5>
+<h6>Heading 6 <small>Sub-heading</small></h6>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-border-color-style">
+                    <script type="prism-html-markup">
+ h1,h2,h3,h4,h5,h6 {
+    color: #455a64;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+h1 {
+    line-height: 40px;
+    font-size: 36px;
+}
+
+h2 {
+    line-height: 36px;
+    font-size: 24px;
+}
+
+h3 {
+    line-height: 30px;
+    font-size: 21px;
+}
+
+h4 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+h5 {
+   line-height: 18px;
+    font-size: 16px;
+}
+
+h6 {
+    line-height: 16px;
+    font-size: 14px;
+}
+
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+		<h4>Paragraph with justify</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<p class="text-justify">
+				  Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.
+				</p>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="paragraph">
+					<li><a href="#html4">HTML</a></li>
+					<li><a href="#css4">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="paragraph" class="tab-wrap-content">
+					<div id="html4" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#paragraph-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="paragraph-html">
+                    <script type="prism-html-markup">
+<p class="text-justify"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum....</p>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css4" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#paragraph-html-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="paragraph-html-style">
+                    <script type="prism-html-markup">
+.text-justify {
+  text-align: justify;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+		<h4>Alignment text</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo" style="display:block; width: 57%;">
+				<p class="demo-title">Demo</p>
+				<p class="text-left">Left aligned text on all viewport sizes.</p>
+				<p class="text-center">Center aligned text on all viewport sizes.</p>
+				<p class="text-right">Right aligned text on all viewport sizes.</p>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="alignment">
+					<li><a href="#html5">HTML</a></li>
+					<li><a href="#css5">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="alignment" class="tab-wrap-content">
+					<div id="html5" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#alignment-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="alignment-html">
+                    <script type="prism-html-markup">
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css5" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#alignment-html-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="alignment-html-style">
+                    <script type="prism-html-markup">
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<h4>Font weight and italics</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				 <p class="font-weight-bold">Bold text.</p>
+                 <p class="font-weight-normal">Normal weight text.</p>
+                 <p class="font-italic">Italic text.</p>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="font-weight">
+					<li><a href="#html">HTML</a></li>
+					<li><a href="#css">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="font-weight" class="tab-wrap-content">
+					<div id="html" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#font-weight-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="font-weight-html">
+                    <script type="prism-html-markup">
+<p class="font-weight-bold">Bold text.</p>
+<p class="font-weight-normal">Normal weight text.</p>
+<p class="font-italic">Italic text.</p>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#font-weight-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="font-weight-style">
+                    <script type="prism-html-markup">
+.font-weight-bold{
+	font-weight: 700;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.font-italic {
+    font-style: italic;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<h4>Text colors</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				 <p class="text-muted">This is an example of muted text.</p>
+                 <p class="text-primary">This is an example of primary text.</p>
+                 <p class="text-success">This is an example of success text.</p>
+                 <p class="text-info">This is an example of info text.</p>
+                 <p class="text-warning">This is an example of warning text.</p>
+                 <p class="text-danger">This is an example of danger text.</p>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="text-color">
+					<li><a href="#html6">HTML</a></li>
+					<li><a href="#css6">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="text-color" class="tab-wrap-content">
+					<div id="html6" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#text-color-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="text-color-html">
+                    <script type="prism-html-markup">
+<p class="text-muted">This is an example of muted text.</p>
+<p class="text-primary">This is an example of primary text.</p>
+<p class="text-success">This is an example of success text.</p>
+<p class="text-info">This is an example of info text.</p>
+<p class="text-warning">This is an example of warning text.</p>
+<p class="text-danger">This is an example of danger text.</p>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css6" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#text-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="text-color-style">
+                    <script type="prism-html-markup">
+.text-muted {
+    color: #bcc3d3;
+}
+
+.text-primary {
+    color: #6772e5;
+}
+
+.text-success {
+    color: #24d2b5;
+}
+
+.text-info {
+    color: #20aee3;
+}
+
+.text-warning {
+    color: #ff9041;
+}
+
+.text-danger {
+    color: #ff5c6c;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<h4>Address</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				 <address>
+                     <p><strong>Address1.</strong></p>
+                     <p> Address2</p>
+                     <p> Address3, IN 457825</p>
+                     <p><abbr title="Phone">P:</abbr>(123) 456-7890</p>
+                 </address>
+                 
+                 <address>
+                      <p><strong>Sham Kaja</strong></p>
+                      <p><a href="mailto:#">first.last@example.com</a></p>
+                  </address>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="address">
+					<li><a href="#html7">HTML</a></li>
+					<li><a href="#css7">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="address" class="tab-wrap-content">
+					<div id="html7" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#address-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="address-html">
+                    <script type="prism-html-markup">
+<address>
+    <p><strong>Address1.</strong></p>
+    <p> Address2</p>
+    <p> Address3, IN 457825</p>
+    <p><abbr title="Phone">P:</abbr>(123) 456-7890</p>
+</address>
+                 
+<address>
+     <p><strong>Sham Kaja</strong></p>
+     <p><a href="mailto:#">first.last@example.com</a></p>
+</address>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css7" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#address-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="address-style">
+                    <script type="prism-html-markup">
+address {
+	margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+}
+
+address strong {
+	font-weight:bold;
+}
+
+address p {
+	margin:0;
+}
+
+abbr[title] {
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    cursor: help;
+    border-bottom: 0;
+}
+
+address a{
+	 color: #20aee3;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/prism.min.js"></script>
+	<script src="../js/clipboard.min.js"></script>
+
+	<script src="../js/code-box-copy.js"></script>
+	<script>
+		$('.code-box-copy').codeBoxCopy({
+			tooltipText : 'Copied',
+			tooltipShowTime : 1000,
+			tooltipFadeInTime : 300,
+			tooltipFadeOutTime : 300
+		});
+	</script>
+</body>
+</html>

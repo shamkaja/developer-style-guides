@@ -542,3 +542,148 @@ button{
 .vertical-btn-group .btn:not(:last-child) {
     border-bottom: none;
 }
+
+.typography .demo-tab h1, .typography .demo-tab h2, .typography .demo-tab h3, .typography .demo-tab h4, .typography .demo-tab h5, .typography .demo-tab h6 {
+    color: #455a64;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.typography .demo-tab h1 {
+    line-height: 40px;
+    font-size: 36px;
+}
+
+.typography .demo-tab h2 {
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.typography .demo-tab h3 {
+    line-height: 30px;
+    font-size: 21px;
+}
+
+.typography .demo-tab h4 {
+    line-height: 22px;
+    font-size: 18px;
+    padding: 0;
+    border: none;
+}
+
+.typography .demo-tab h5 {
+   line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.typography .demo-tab h6 {
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+p.text-justify {
+	color: #666;
+    text-align: justify;
+    width: 68%;
+    line-height: 21px;
+}
+
+p.text-left {
+	color: #666;
+    text-align: left;
+    line-height: 21px;
+    margin: 0;
+}
+
+p.text-center {
+	color: #666;
+    text-align: center;
+    line-height: 21px;
+    margin: 0;
+}
+
+p.text-right {
+	color: #666;
+    text-align: right;
+    line-height: 21px;
+    margin: 0;
+}
+
+p.font-weight-bold{
+	font-weight: 700;
+	margin: 0;
+}
+
+p.font-weight-normal {
+    font-weight: 400;
+    margin: 0;
+}
+
+p.font-italic {
+    font-style: italic;
+    margin: 0;
+}
+
+.text-muted {
+    color: #bcc3d3;
+    margin:0;
+}
+
+.text-primary {
+    color: #6772e5;
+    margin:0;
+}
+
+.text-success {
+    color: #24d2b5;
+    margin:0;
+}
+
+.text-info {
+    color: #20aee3;
+    margin:0;
+}
+
+.text-warning {
+    color: #ff9041;
+    margin:0;
+}
+
+.text-danger {
+    color: #ff5c6c;
+    margin:0;
+}
+
+address {
+	margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+}
+
+address strong {
+	font-weight:bold;
+}
+
+address p {
+	margin:0;
+}
+
+abbr[title] {
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    cursor: help;
+    border-bottom: 0;
+}
+
+address a{
+	 color: #20aee3;
+}
