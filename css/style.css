@@ -1,12 +1,14 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Cookie');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700');
  * {
-     font-family: 'Antenna for MdCn', sans-serif;
+     font-family: 'Montserrat', sans-serif;
      font-size: 14px;
      list-style-type: none;
      margin: 0;
      padding: 0;
      text-decoration: none;
+     font-weight: 500;
 }
 
  html, body {
@@ -49,8 +51,8 @@
  .left-panel ul li a {
      color: #fff;
      display: block;
-     font-size: 12px;
-     font-weight: normal;
+     font-size: 15px;
+     font-weight: 700;
      letter-spacing: 1px;
      padding: 15px 20px;
 }
@@ -95,7 +97,7 @@
         width: 100%;
         z-index: 10;
         font-family: 'Cookie', cursive;
-        font-size: 33px;
+        font-size: 40px;
 }
 
  .demo-tab {
@@ -115,8 +117,8 @@
 
  p {
      color: #fff;
-     font-size: 13px;
-     font-weight: 400;
+     font-size: 19px;
+     font-weight: 500;
      line-height: 24px;
      margin: 20px 0;
 }
@@ -241,7 +243,7 @@
 
  .left-panel ul li .sub-menu li a {
      background: none;
-     font-size: 10px;
+     font-size: 12px;
      padding: 8px 20px;
 }
 

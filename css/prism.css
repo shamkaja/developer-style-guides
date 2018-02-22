@@ -17,7 +17,7 @@ code[class*=language-],pre[class*=language-]{
 }
 
 code[class*=language-] span,pre[class*=language-] span{
-	font-size:13px;
+	font-size: 13px;
 }
 code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{
     text-shadow:none;
@@ -93,7 +93,7 @@ pre[class*=language-]{
 
 .code-box-copy__btn {
     position: absolute;
-    top: 26px;
+    top: 24px;
     right: 0px;
     width: 36px;
     height: 36px;
@@ -107,11 +107,11 @@ pre[class*=language-]{
 
 button.code-box-copy__btn:after {
        content: "Click to Copy";
-    position: relative;
-    top: 10px;
-    right: 50px;
-    color: #313130;
-    white-space: nowrap;
+       position: relative;
+       top: 20px;
+       right: 50px;
+       color: #313130;
+       white-space: nowrap;
 }
 
 .code-box-copy__btn::before {
@@ -119,8 +119,8 @@ button.code-box-copy__btn:after {
     content: ' ';
     vertical-align: middle;
     width: 16px;
-    height: 16px;
-    background: url(../images/ic-copy.svg) no-repeat 0 0;
+    height: 100%;
+    background: url(../images/ic-copy.svg) no-repeat center center;
 }
 
 .code-box-copy:hover .code-box-copy__btn {

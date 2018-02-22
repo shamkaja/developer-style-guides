@@ -145,7 +145,7 @@ button{
 	 position:relative;
 	 padding:10px;
 	 line-height: 40px;
-	 font-size:16px;
+	 font-size: 16px;
 	 cursor:pointer;
 	 margin:10px;
 	 width:100px;
@@ -546,7 +546,7 @@ button{
 
 .typography .demo-tab h1, .typography .demo-tab h2, .typography .demo-tab h3, .typography .demo-tab h4, .typography .demo-tab h5, .typography .demo-tab h6 {
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 0;
     margin-bottom: .5rem;
 }
@@ -593,7 +593,7 @@ small {
 p.text-justify {
 	color: #fff;
 	text-align: justify;
-	line-height: 21px;
+	line-height: 31px;
 }
 
 p.text-left {
@@ -607,7 +607,6 @@ p.text-center {
 	color: #fff;
 	text-align: center;
 	line-height: 21px;
-	margin: 0;
 }
 
 p.text-right {
@@ -624,7 +623,6 @@ p.font-weight-bold{
 
 p.font-weight-normal {
     font-weight: 400;
-    margin: 0;
 }
 
 p.font-italic {
@@ -634,32 +632,26 @@ p.font-italic {
 
 .text-muted {
     color: #bcc3d3;
-    margin:0;
 }
 
 .text-primary {
     color: #6772e5;
-    margin:0;
 }
 
 .text-success {
     color: #24d2b5;
-    margin:0;
 }
 
 .text-info {
     color: #20aee3;
-    margin:0;
 }
 
 .text-warning {
     color: #ff9041;
-    margin:0;
 }
 
 .text-danger {
     color: #ff5c6c;
-    margin:0;
 }
 
 address {
