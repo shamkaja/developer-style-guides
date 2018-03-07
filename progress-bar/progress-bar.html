@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CSS styleguides</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="stylesheet" href="../css/demo.css">
+<style>
+body {
+	overflow: auto;
+}
+p{
+  color:#fff;
+}
+
+p span{
+  color:#e83e8c;
+  margin:0 5px;
+}
+
+
+</style>
+</head>
+
+<body>
+	<div class="content typography">
+	<h4>Simple Progress Bar</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo" style="width:400px;">
+				<p class="demo-title">Demo</p>
+				<div class="progress">
+				  <div class="progress-bar" style="width: 25%"></div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-green" style="width: 50%"></div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-red" style="width: 75%"></div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-pink" style="width: 100%"></div>
+				</div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="btn-tile1">
+					<li><a href="#html1">HTML</a></li>
+					<li><a href="#css1">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-tile1" class="tab-wrap-content">
+					<div id="html1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-gradiant" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-gradiant">
+                    <script type="prism-html-markup">
+<div class="progress">
+  <div class="progress-bar" style="width: 25%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-green" style="width: 50%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-red" style="width: 75%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-pink" style="width: 100%"></div>
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-icon-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-icon-style">
+                    <script type="prism-html-markup">
+.progress {
+    display: flex;
+    height: 14px;
+    overflow: hidden;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #007bff;
+}
+
+.progress-green {
+	background-color:#4CAF50;
+}
+
+.progress-red {
+	background-color:#F44336;
+}
+
+.progress-pink {
+	background-color:#E91E63;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+			<h4>Progress Bar With value</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo" style="width:400px;">
+				<p class="demo-title">Demo</p>
+				<div class="progress">
+				  <div class="progress-bar" style="width: 25%">25%</div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-green" style="width: 50%">50%</div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-red" style="width: 75%">75%</div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-pink" style="width: 100%">100%</div>
+				</div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="btn-border">
+					<li><a href="#html3">HTML</a></li>
+					<li><a href="#css3">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-border" class="tab-wrap-content">
+					<div id="html3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-border-color">
+                    <script type="prism-html-markup">
+<div class="progress">
+  <div class="progress-bar" style="width: 25%">25%</div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-green" style="width: 50%">50%</div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-red" style="width: 75%">75%</div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-pink" style="width: 100%">100%</div>
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-border-color-style">
+                    <script type="prism-html-markup">
+.progress {
+    display: flex;
+    height: 14px;
+    overflow: hidden;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #007bff;
+    font-size:11px;
+}
+
+.progress-green {
+	background-color:#4CAF50;
+}
+
+.progress-red {
+	background-color:#F44336;
+}
+
+.progress-pink {
+	background-color:#E91E63;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+		<h4>Striped Progress Bar</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo" style="width:400px;">
+				<p class="demo-title">Demo</p>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-animated" style="width: 25%"></div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-green progress-bar-animated" style="width: 50%"></div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-red progress-bar-animated" style="width: 75%"></div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-pink progress-bar-animated" style="width: 100%"></div>
+				</div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="paragraph">
+					<li><a href="#html4">HTML</a></li>
+					<li><a href="#css4">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="paragraph" class="tab-wrap-content">
+					<div id="html4" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#paragraph-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="paragraph-html">
+                    <script type="prism-html-markup">
+<div class="progress">
+  <div class="progress-bar progress-bar-animated" style="width: 25%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-green progress-bar-animated" style="width: 50%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-red progress-bar-animated" style="width: 75%"></div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-pink progress-bar-animated" style="width: 100%"></div>
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css4" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#paragraph-html-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="paragraph-html-style">
+                    <script type="prism-html-markup">
+.progress {
+    display: flex;
+    height: 14px;
+    overflow: hidden;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #007bff;
+}
+
+.progress-green {
+	background-color:#4CAF50;
+}
+
+.progress-red {
+	background-color:#F44336;
+}
+
+.progress-pink {
+	background-color:#E91E63;
+}
+
+.progress-bar-animated {
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    -webkit-animation: progress-bar-animate 1s linear infinite;
+    animation: progress-bar-animate 1s linear infinite;
+}
+
+@-webkit-keyframes progress-bar-animate {
+	from {
+	  background-position:1rem 0
+	}
+	
+	to {
+	   background-position:0 0
+	}
+}
+
+@keyframes progress-bar-animate {
+	from{
+	  background-position:1rem 0
+	}
+	
+	to{ 
+	  background-position:0 0
+	}
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+		<h4>Vertical Progress bars</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo" style="display:block;width:400px;height:400px;">
+				<p class="demo-title">Demo</p>
+				<div class="vertical-progress-bar">
+					<div class="progress">
+					  <div class="progress-bar progress-bar-animated" style="height: 25%"></div>
+					</div>
+					<div class="progress">
+					  <div class="progress-bar progress-green progress-bar-animated" style="height: 50%"></div>
+					</div>
+					<div class="progress">
+					  <div class="progress-bar progress-red progress-bar-animated" style="height: 75%"></div>
+					</div>
+					<div class="progress">
+					  <div class="progress-bar progress-pink progress-bar-animated" style="height: 100%"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="alignment">
+					<li><a href="#html5">HTML</a></li>
+					<li><a href="#css5">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="alignment" class="tab-wrap-content">
+					<div id="html5" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#alignment-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="alignment-html">
+                    <script type="prism-html-markup">
+<div class="vertical-progress-bar">
+
+  <div class="progress">
+	 <div class="progress-bar progress-bar-animated" style="height: 25%"></div>
+  </div>
+
+  <div class="progress">
+	 <div class="progress-bar progress-green progress-bar-animated" style="height: 50%"></div>
+  </div>
+
+  <div class="progress">
+	<div class="progress-bar progress-red progress-bar-animated" style="height: 75%"></div>
+  </div>
+
+  <div class="progress">
+	 <div class="progress-bar progress-pink progress-bar-animated" style="height: 100%"></div>
+  </div>
+
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css5" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#alignment-html-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="alignment-html-style">
+                    <script type="prism-html-markup">
+.vertical-progress-bar{
+	display:flex;
+	
+}
+
+.vertical-progress-bar .progress {
+    display: flex;
+    height: 350px;
+    overflow: hidden;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    margin: 15px;
+    width: 14px;
+}
+
+.vertical-progress-bar .progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 11px;
+    width: 100%;
+    background-color: #007bff;
+}
+
+.vertical-progress-bar .progress-green {
+	background-color:#4CAF50;
+}
+
+.vertical-progress-bar .progress-red {
+	background-color:#F44336;
+}
+
+.vertical-progress-bar .progress-pink {
+	background-color:#E91E63;
+}
+
+.progress-bar-animated {
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    -webkit-animation: progress-bar-animate 1s linear infinite;
+    animation: progress-bar-animate 1s linear infinite;
+}
+
+@-webkit-keyframes progress-bar-animate {
+	from {
+	  background-position:1rem 0
+	}
+	
+	to {
+	   background-position:0 0
+	}
+}
+
+@keyframes progress-bar-animate {
+	from{
+	  background-position:1rem 0
+	}
+	
+	to{ 
+	  background-position:0 0
+	}
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<h4>Vertical Progress Bar from bottom</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				 <div class="vertical-progress-bottom">
+					<div class="progress">
+					  <div class="progress-bar progress-bar-animated" style="height: 25%"></div>
+					</div>
+					<div class="progress">
+					  <div class="progress-bar progress-green progress-bar-animated" style="height: 50%"></div>
+					</div>
+					<div class="progress">
+					  <div class="progress-bar progress-red progress-bar-animated" style="height: 75%"></div>
+					</div>
+					<div class="progress">
+					  <div class="progress-bar progress-pink progress-bar-animated" style="height: 100%"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="font-weight">
+					<li><a href="#html">HTML</a></li>
+					<li><a href="#css">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="font-weight" class="tab-wrap-content">
+					<div id="html" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#font-weight-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="font-weight-html">
+                    <script type="prism-html-markup">
+<div class="vertical-progress-bottom">
+
+  <div class="progress">
+	 <div class="progress-bar progress-bar-animated" style="height: 25%"></div>
+  </div>
+
+  <div class="progress">
+	 <div class="progress-bar progress-green progress-bar-animated" style="height: 50%"></div>
+  </div>
+
+  <div class="progress">
+	<div class="progress-bar progress-red progress-bar-animated" style="height: 75%"></div>
+  </div>
+
+  <div class="progress">
+	 <div class="progress-bar progress-pink progress-bar-animated" style="height: 100%"></div>
+  </div>
+
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#font-weight-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="font-weight-style">
+                    <script type="prism-html-markup">
+.vertical-progress-bottom{
+	display:flex;
+	
+}
+
+.vertical-progress-bottom .progress {
+    display: flex;
+    height: 350px;
+    overflow: hidden;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    margin: 15px;
+    width: 14px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.vertical-progress-bottom .progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 11px;
+    width: 100%;
+    background-color: #007bff;
+}
+
+.vertical-progress-bottom .progress-green {
+	background-color:#4CAF50;
+}
+
+.vertical-progress-bottom .progress-red {
+	background-color:#F44336;
+}
+
+.vertical-progress-bottom .progress-pink {
+	background-color:#E91E63;
+}
+
+.progress-bar-animated {
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    -webkit-animation: progress-bar-animate 1s linear infinite;
+    animation: progress-bar-animate 1s linear infinite;
+}
+
+@-webkit-keyframes progress-bar-animate {
+	from {
+	  background-position:1rem 0
+	}
+	
+	to {
+	   background-position:0 0
+	}
+}
+
+@keyframes progress-bar-animate {
+	from{
+	  background-position:1rem 0
+	}
+	
+	to{ 
+	  background-position:0 0
+	}
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<h4>Progress Bar Loader with Animation </h4>
+		<div class="demo-tab">
+			<div class="demo-content demo" style="width:400px;">
+				<p class="demo-title">Demo</p>
+				 <div class="progressbar-loader"></div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="text-color">
+					<li><a href="#html6">HTML</a></li>
+					<li><a href="#css6">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="text-color" class="tab-wrap-content">
+					<div id="html6" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#text-color-html" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="text-color-html">
+                    <script type="prism-html-markup">
+<div class="progressbar-loader"></div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css6" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#text-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="text-color-style">
+                    <script type="prism-html-markup">
+.progressbar-loader {
+    z-index: 9;
+    width: 400px;
+    height: 9px;
+    position: relative;
+    margin: 20px 0;
+}
+.progressbar-loader::before,
+.progressbar-loader::after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e91e63), color-stop(20%, #e91e63), color-stop(20%, #03a9f4), color-stop(40%, #03a9f4), color-stop(40%, #8bc34a), color-stop(60%, #8bc34a), color-stop(60%, #ffeb3b), color-stop(80%, #ffeb3b), color-stop(80%, #ff5722), to(#ff5722));
+  background-image: linear-gradient(90deg, #e91e63 0%, #e91e63 20%, #03a9f4 20%, #03a9f4 40%, #8bc34a 40%, #8bc34a 60%, #ffeb3b 60%, #ffeb3b 80%, #ff5722 80%, #ff5722 100%);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  -webkit-animation: movebar 5s linear infinite;
+          animation: movebar 5s linear infinite;
+}
+.progressbar-loader::before {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+          box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+}
+.progressbar-loader::after {
+  z-index: 9;
+  top: 6px;
+  -webkit-filter: blur(16px);
+          filter: blur(16px);
+  opacity: 0.7;
+}
+
+@-webkit-keyframes movebar {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0;
+  }
+}
+@keyframes movebar {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0;
+  }
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	</div>
+
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/prism.min.js"></script>
+	<script src="../js/clipboard.min.js"></script>
+
+	<script src="../js/code-box-copy.js"></script>
+	<script>
+		$('.code-box-copy').codeBoxCopy({
+			tooltipText : 'Copied',
+			tooltipShowTime : 1000,
+			tooltipFadeInTime : 300,
+			tooltipFadeOutTime : 300
+		});
+	</script>
+</body>
+</html>
