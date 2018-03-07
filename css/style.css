@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700');
  * {
-     font-family: 'Montserrat', sans-serif;
+     font-family: arial;
      font-size: 14px;
      list-style-type: none;
      margin: 0;
@@ -51,9 +51,8 @@
  .left-panel ul li a {
      color: #fff;
      display: block;
-     font-size: 15px;
+     font-size: 13px;
      font-weight: 700;
-     letter-spacing: 1px;
      padding: 15px 20px;
 }
 
@@ -107,7 +106,7 @@
  h4 {
     border-bottom: 2px solid #1cc87e;
     color: #fff;
-    font-size: 32px;
+    font-size: 15px;
     margin: 20px 0;
     padding: 10px 0;
     position: relative;
@@ -117,10 +116,10 @@
 
  p {
      color: #fff;
-     font-size: 19px;
+     font-size: 12px;
      font-weight: 500;
      line-height: 24px;
-     margin: 20px 0;
+     margin: 5px 0;
 }
 
  h5 {
@@ -153,7 +152,7 @@
 
  .tab-wrap ul {
      display: flex;
-     margin-top: 40px;
+     margin-top: 10px;
      position: relative;
      width: 100%;
 }
@@ -166,7 +165,7 @@
      cursor: pointer;
      display: inline-block;
      font-weight: bold;
-     height: 56px;
+     height: 41px;
      justify-content: center;
      ms-flex-align: center;
      ms-flex-pack: center;
@@ -183,13 +182,13 @@
 
  .tab-wrap ul li a {
      align-items: center;
-     color: #ccc;
+     color: #fff;
      display: flex;
      height: 100%;
      justify-content: center;
      width: 100%;
      font-family: 'Cookie', cursive;
-     font-size: 31px;
+     font-size: 22px;
      font-weight: normal;
      letter-spacing: 5px;
 }
@@ -243,7 +242,7 @@
 
  .left-panel ul li .sub-menu li a {
      background: none;
-     font-size: 12px;
+     font-size: 11px;
      padding: 8px 20px;
 }
 
@@ -261,7 +260,7 @@
  .demo p.demo-title {
      color: #1CC87E;
      left: -40px;
-     margin: 20px 0 40px 0;
+     margin: 0;
      text-decoration: underline;
      position: relative;
 }
@@ -292,8 +291,8 @@ svg path,svg circle{
 
 p.demo-source{
     color: #1CC87E;
-    margin: 40px 0 0 0;
+    margin: 10px 0 0 0;
     text-decoration: underline;
     position: relative;
-    top: 5px;
+    top: 0;
 }
