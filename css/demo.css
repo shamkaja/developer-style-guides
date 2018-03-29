@@ -1489,3 +1489,53 @@ address a{
   opacity: 1;
   transform: scale(1);
 }
+
+.layout-wrapper{
+	width:100%;
+	display:flex;
+	margin-top:15px;
+	flex-direction: column;
+}
+
+.layout{
+	margin: 10px;
+}
+
+.layout-header{
+	height: 50px;
+    background: #696969;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.layout-container{
+	height: 200px;
+	background: #848282;
+}
+
+.layout-footer{
+	height:50px;
+	background: #696969;
+}
+
+.layout-row{
+	display:flex;
+	height:100%;
+}
+
+.layout-column{
+	flex: 1;
+    background: rgb(84, 83, 83);
+    border: 1px solid;
+}
+
+.layout-column.layout-middle{
+	flex:2;
+}
+
+.flex-column{
+	flex-direction:column;
+}

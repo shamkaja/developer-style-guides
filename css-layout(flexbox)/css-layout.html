@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CSS styleguides</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="stylesheet" href="../css/demo.css">
+<style>
+body {
+	overflow: auto;
+}
+p{
+  color:#fff;
+}
+
+p span{
+  color:#e83e8c;
+  margin:0 5px;
+}
+
+
+</style>
+</head>
+
+<body>
+	<div class="content typography">
+	<h4>Layout</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo" style="display:block;">
+				<p class="demo-title">Demo</p>
+			<div class="layout-wrapper">
+				<div class="layout">
+				  <div class="layout-header">Layout-1</div>
+				  <div class="layout-container"></div>
+				  <div class="layout-footer"></div>
+				</div>
+				<div class="layout">
+				  <div class="layout-header">Layout-2</div>
+				  <div class="layout-container">
+				    <div class="layout-row">
+				      <div class="layout-column"></div>
+				      <div class="layout-column"></div>
+				      <div class="layout-column"></div>
+				    </div>
+				  </div>
+				  <div class="layout-footer"></div>
+				</div>
+				<div class="layout">
+				  <div class="layout-header">Layout-3</div>
+				  <div class="layout-container">
+				    <div class="layout-row">
+				      <div class="layout-column"></div>
+				      <div class="layout-column layout-middle"></div>
+				      <div class="layout-column"></div>
+				    </div>
+				  </div>
+				  <div class="layout-footer"></div>
+				</div>
+				<div class="layout">
+				  <div class="layout-header">Layout-4</div>
+				  <div class="layout-container">
+				    <div class="layout-row flex-column">
+				      <div class="layout-column"></div>
+				      <div class="layout-column"></div>
+				      <div class="layout-column"></div>
+				    </div>
+				  </div>
+				  <div class="layout-footer"></div>
+				</div>
+				<div class="layout">
+				  <div class="layout-header">Layout-5</div>
+				  <div class="layout-container">
+				    <div class="layout-row flex-column">
+				      <div class="layout-column"></div>
+				      <div class="layout-column layout-middle"></div>
+				      <div class="layout-column"></div>
+				    </div>
+				  </div>
+				  <div class="layout-footer"></div>
+				</div>
+			</div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="btn-tile1">
+					<li><a href="#html1">HTML</a></li>
+					<li><a href="#css1">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-tile1" class="tab-wrap-content">
+					<div id="html1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-gradiant" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-gradiant">
+                    <script type="prism-html-markup">
+<!--layout1-->
+<div class="layout">
+	<div class="layout-header"></div>
+	<div class="layout-container"></div>
+	<div class="layout-footer"></div>
+</div>
+<!--layout2-->
+<div class="layout">
+	<div class="layout-header"></div>
+	<div class="layout-container">
+		<div class="layout-row">
+			<div class="layout-column"></div>
+		    <div class="layout-column"></div>
+			<div class="layout-column"></div>
+		</div>
+	</div>
+	<div class="layout-footer"></div>
+</div>
+<!--layout3-->
+<div class="layout">
+	<div class="layout-header"></div>
+	<div class="layout-container">
+		<div class="layout-row">
+			<div class="layout-column"></div>
+		    <div class="layout-column layout-middle"></div>
+			<div class="layout-column"></div>
+		</div>
+	</div>
+	<div class="layout-footer"></div>
+</div>
+
+<!--layout4-->
+<div class="layout">
+	<div class="layout-header"></div>
+	<div class="layout-container">
+		<div class="layout-row flex-column">
+			<div class="layout-column"></div>
+		    <div class="layout-column"></div>
+			<div class="layout-column"></div>
+		</div>
+	</div>
+	<div class="layout-footer"></div>
+</div>
+<!--layout5-->
+<div class="layout">
+	<div class="layout-header"></div>
+	<div class="layout-container">
+		<div class="layout-row flex-column">
+			<div class="layout-column"></div>
+		    <div class="layout-column layout-middle"></div>
+			<div class="layout-column"></div>
+		</div>
+	</div>
+	<div class="layout-footer"></div>
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-icon-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-icon-style">
+                    <script type="prism-html-markup">
+.layout{
+    margin: 0 10px;
+}
+
+.layout-header{
+	height: 50px;
+    background: #696969;
+}
+
+.layout-container{
+	 height:200px;
+	 background: #848282;
+}
+
+.layout-footer{
+	height:50px;
+	background: #696969;
+}
+
+.layout-row{
+	display:flex;
+	height:100%;
+}
+
+.layout-column{
+	flex: 1;
+    background: rgb(84, 83, 83);
+    border: 1px solid;
+}
+
+.layout-column.layout-middle{
+	flex:2;
+}
+
+.flex-column{
+	flex-direction:column;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/prism.min.js"></script>
+	<script src="../js/clipboard.min.js"></script>
+
+	<script src="../js/code-box-copy.js"></script>
+	<script>
+		$('.code-box-copy').codeBoxCopy({
+			tooltipText : 'Copied',
+			tooltipShowTime : 1000,
+			tooltipFadeInTime : 300,
+			tooltipFadeOutTime : 300
+		});
+	</script>
+</body>
+</html>
