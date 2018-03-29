@@ -214,6 +214,13 @@
      z-index: 9;
 }
 
+ .tab-wrap ul.javascript-tab li.slide{
+	width: calc(100% / 3);
+}
+
+ .tab-wrap ul.javascript-tab li.current:nth-of-type(2) ~ .slide {
+     left: calc((100% / 3) * 1);
+}
  .tab-wrap ul li.current:nth-of-type(2) ~ .slide {
      left: calc((100% / 2) * 1);
 }
