@@ -37,6 +37,7 @@
      position: fixed;
      top: 50px;
      width: 20%;
+     overflow: auto;
 }
 
  .left-panel ul {

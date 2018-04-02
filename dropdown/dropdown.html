@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CSS styleguides</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/prism.css">
+<link rel="stylesheet" href="../css/demo.css">
+<style>
+body {
+	overflow: auto;
+}
+p{
+  color:#fff;
+}
+
+p span{
+  color:#e83e8c;
+  margin:0 5px;
+}
+
+
+</style>
+</head>
+
+<body>
+	<div class="content typography">
+	<h4>Simple Dropdown</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<div class="dropdown" style="margin:10px 10px 0 0;">
+				  <button class="dropdown-btn">Dropdown</button>
+				  <div class="dropdown-content">
+				    <a href="#">Lorem Ipsum</a>
+				    <a href="#">Lorem Ipsum</a>
+				    <a href="#">Lorem Ipsum</a>
+				  </div>
+				</div>
+				<div class="dropdown" style="margin-top:10px;">
+				  <button class="dropdown-btn">Dropdown Paragraph</button>
+				  <div class="dropdown-content">
+				    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+				    </p>
+				  </div>
+				</div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="btn-tile1">
+					<li><a href="#html1">HTML</a></li>
+					<li><a href="#css1">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-tile1" class="tab-wrap-content">
+					<div id="html1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-gradiant" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-gradiant">
+                    <script type="prism-html-markup">
+<div class="dropdown">
+  <button class="dropdown-btn">Dropdown</button>
+  <div class="dropdown-content">
+	<a href="#">Lorem Ipsum</a>
+	<a href="#">Lorem Ipsum</a>
+	<a href="#">Lorem Ipsum</a>
+  </div>
+</div>
+<-- dropdown paragraph -->
+<div class="dropdown">
+  <button class="dropdown-btn">Dropdown</button>
+  <div class="dropdown-content">
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </div>
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css1" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-icon-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-icon-style">
+                    <script type="prism-html-markup">
+.dropdown{
+	position:relative;
+	display:inline-block;
+	z-index: 99;
+}
+
+.dropdown-btn{
+	padding: 10px;
+    background: #a0da29;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 27px;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	min-width:100px;
+	background:#fff;
+	padding:10px;
+}
+
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+.dropdown-content a{
+	text-decoration:none;
+	margin: 10px 0;
+	display:block;
+	color: #07a;
+	font-size: 12px;
+}
+
+.dropdown-content::before {
+  position: absolute;
+  content: '';
+  border: 5px solid transparent;
+  z-index: 1;
+  bottom: 100%;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+  left: 25px;
+}
+
+.dropdown-content p {
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    color: #666;
+    font-size: 12px;
+    width:300px;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+			<h4>Dropdown with Transition</h4>
+		<div class="demo-tab">
+			<div class="demo-content demo">
+				<p class="demo-title">Demo</p>
+				<div class="dropdown dropdown-transition" style="margin:10px 10px 0 0;">
+				  <button class="dropdown-btn">Dropdown</button>
+				  <div class="dropdown-content">
+				    <a href="#">Lorem Ipsum</a>
+				    <a href="#">Lorem Ipsum</a>
+				    <a href="#">Lorem Ipsum</a>
+				  </div>
+				</div>
+				
+				<div class="dropdown dropdown-transition" style="margin-top:10px;">
+				  <button class="dropdown-btn">Dropdown Paragraph</button>
+				  <div class="dropdown-content">
+				    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+				    </p>
+				  </div>
+				</div>
+			</div>
+			<div class="tab-wrap">
+<p class="demo-source">Source</p>
+				<ul class="tabs-menu" data-tab-content-id="btn-border">
+					<li><a href="#html3">HTML</a></li>
+					<li><a href="#css3">CSS</a></li>
+					<li class="slide"></li>
+				</ul>
+				<div id="btn-border" class="tab-wrap-content">
+					<div id="html3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color" title="Copy"></button>
+								<pre>
+												<code class="language-markup" id="btn-border-color">
+                    <script type="prism-html-markup">
+<div class="dropdown dropdown-transition">
+  <button class="dropdown-btn">Dropdown</button>
+  <div class="dropdown-content">
+	<a href="#">Lorem Ipsum</a>
+	<a href="#">Lorem Ipsum</a>
+	<a href="#">Lorem Ipsum</a>
+  </div>
+</div>
+<-- dropdown paragraph -->
+<div class="dropdown dropdown-transition">
+  <button class="dropdown-btn">Dropdown</button>
+  <div class="dropdown-content">
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </div>
+</div>
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+					<div id="css3" class="tab-content">
+						<div class="demo-content">
+							<div class="code-box-copy">
+								<button class="code-box-copy__btn"
+									data-clipboard-target="#btn-border-color-style" title="Copy"></button>
+								<pre>
+												<code class="language-css" id="btn-border-color-style">
+                    <script type="prism-html-markup">
+.dropdown{
+	position:relative;
+	display:inline-block;
+	z-index: 99;
+}
+
+.dropdown-btn{
+	padding: 10px;
+    background: #a0da29;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 27px;
+}
+
+.dropdown-transition .dropdown-content{
+	display:block;
+	visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    position:absolute;
+	min-width:100px;
+	background:#fff;
+	padding:10px;
+}
+
+.dropdown-transition:hover .dropdown-content{
+	visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-content a{
+	text-decoration:none;
+	margin: 10px 0;
+	display:block;
+	color: #07a;
+	font-size: 12px;
+}
+
+.dropdown-content::before {
+  position: absolute;
+  content: '';
+  border: 5px solid transparent;
+  z-index: 1;
+  bottom: 100%;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+  left: 25px;
+}
+
+.dropdown-content p {
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    color: #666;
+    font-size: 12px;
+    width:300px;
+}
+                          </script>
+												</code>
+											</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	</div>
+
+
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/tab.js"></script>
+	<script src="../js/prism.min.js"></script>
+	<script src="../js/clipboard.min.js"></script>
+
+	<script src="../js/code-box-copy.js"></script>
+	<script>
+		$('.code-box-copy').codeBoxCopy({
+			tooltipText : 'Copied',
+			tooltipShowTime : 1000,
+			tooltipFadeInTime : 300,
+			tooltipFadeOutTime : 300
+		});
+	</script>
+</body>
+</html>
